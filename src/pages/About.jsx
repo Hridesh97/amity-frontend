@@ -1,75 +1,260 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
-  return (
-    <div className="pt-24 pb-20">
-      <div className="container-custom">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto text-center mb-16"
-        >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
-          <p className="text-xl text-gray-600">
-            We are a team of passionate developers and designers dedicated to creating exceptional digital experiences.
-          </p>
-        </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <h2 className="text-3xl font-bold mb-4">Our Story</h2>
-            <p className="text-gray-600 mb-4">
-              Founded in 2015, we started as a small team of developers with a big vision. Today, we've grown into a full-service digital agency helping businesses worldwide achieve their goals through technology.
-            </p>
-            <p className="text-gray-600">
-              Our mission is simple: to deliver innovative solutions that make a real difference for our clients. We believe in building lasting relationships based on trust, quality, and results.
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-              alt="Our team"
-              className="rounded-lg shadow-xl"
-            />
-          </motion.div>
+  const teamMembers = [
+
+    {
+      name: "Hridesh",
+      role: "Full Stack Developer",
+      exp: "3+ Years Experience",
+      image: new URL('../assets/images/Hridesh.jpg', import.meta.url).href
+    },
+
+    {
+      name: "Amit",
+      role: "Frontend Developer",
+      exp: "2+ Years Experience",
+      image: new URL('../assets/images/Amit.jpg', import.meta.url).href
+    },
+
+    {
+      name: "Rahul",
+      role: "Backend Developer",
+      exp: "3+ Years Experience",
+      image: new URL('../assets/images/Rahul.jpg', import.meta.url).href
+    },
+
+    {
+      name: "Ravi",
+      role: "UI Designer",
+      exp: "2+ Years Experience",
+      image: new URL('../assets/images/Ravi.jpg', import.meta.url).href
+    },
+
+    {
+      name: "Developer",
+      role: "SEO Expert",
+      exp: "4+ Years Experience",
+      image: new URL('../assets/images/dev.jpg', import.meta.url).href
+    }
+
+  ];
+
+
+  return (
+
+    <div className="bg-green-200 min-h-screen py-20">
+
+
+      <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+
+
+        {/* Header */}
+
+        <div className="bg-green-600 text-white text-center py-16 relative">
+
+
+          <h1 className="text-4xl font-bold mb-4">
+            Who we are ?
+          </h1>
+
+
+          <p className="max-w-2xl mx-auto text-sm">
+
+            We are professional Website Developers and Digital
+            Marketing Experts providing Website Development,
+            SEO and Software Solutions.
+
+          </p>
+
+
+          {/* Wave */}
+
+          <div className="absolute bottom-0 left-0 w-full">
+
+            <svg
+              viewBox="0 0 500 100"
+              preserveAspectRatio="none"
+              className="w-full h-20"
+            >
+
+              <path
+                d="M0,50 C150,120 350,0 500,50 L500,100 L0,100 Z"
+                className="fill-white"
+              />
+
+            </svg>
+
+          </div>
+
+
         </div>
 
+
+        {/* Experience Section */}
+
+        <div className="py-12 px-10 text-center border-b">
+
+
+          <h2 className="text-3xl font-bold text-green-700 mb-8">
+
+            Our Experience
+
+          </h2>
+
+
+          <div className="grid md:grid-cols-4 gap-8">
+
+
+            <div>
+
+              <h3 className="text-3xl font-bold text-green-600">
+
+                5+
+
+              </h3>
+
+              <p>Years Experience</p>
+
+            </div>
+
+
+            <div>
+
+              <h3 className="text-3xl font-bold text-green-600">
+
+                50+
+
+              </h3>
+
+              <p>Projects Completed</p>
+
+            </div>
+
+
+            <div>
+
+              <h3 className="text-3xl font-bold text-green-600">
+
+                30+
+
+              </h3>
+
+              <p>Happy Clients</p>
+
+            </div>
+
+
+            <div>
+
+              <h3 className="text-3xl font-bold text-green-600">
+
+                10+
+
+              </h3>
+
+              <p>Technologies</p>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+
         {/* Team Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          <h2 className="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((member) => (
-              <div key={member} className="text-center">
-                <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden">
+
+        <div className="py-16 px-10 text-center">
+
+
+          <h2 className="text-3xl font-bold text-green-700 mb-12">
+
+            Meet our team
+
+          </h2>
+
+
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
+
+
+            {teamMembers.map((member, index) => (
+
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.05 }}
+                className="text-center"
+              >
+
+
+                {/* Hexagon Shape Image */}
+
+                <div className="w-36 h-36 mx-auto mb-4 overflow-hidden shadow-lg"
+                
+                style={{
+                  clipPath:
+                    "polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)"
+                }}
+
+                >
+
+
                   <img
-                    src={`https://images.unsplash.com/photo-${member === 1 ? '1472099645785-5658abf4ff4e' : member === 2 ? '1494790108777-8fde9f1b9c3d' : member === 3 ? '1500648767791-00dcc994a43e' : '1534528741775-53994a69daeb'}?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80`}
-                    alt="Team member"
+                    src={member.image}
+                    alt={member.name}
                     className="w-full h-full object-cover"
                   />
+
                 </div>
-                <h3 className="text-xl font-semibold mb-1">John Doe</h3>
-                <p className="text-gray-600">Lead Developer</p>
-              </div>
+
+
+
+                <h3 className="text-lg font-semibold">
+
+                  {member.name}
+
+                </h3>
+
+
+
+                <p className="text-green-600 text-sm">
+
+                  {member.role}
+
+                </p>
+
+
+
+                <p className="text-gray-500 text-xs mt-1">
+
+                  {member.exp}
+
+                </p>
+
+
+              </motion.div>
+
             ))}
+
+
           </div>
-        </motion.div>
+
+
+        </div>
+
+
       </div>
+
+
     </div>
+
   );
+
 };
 
 export default About;

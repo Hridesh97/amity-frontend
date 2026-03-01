@@ -20,9 +20,9 @@ const Navbar = () => {
     { name: 'About Us', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'Contact', path: '/contact' },
-    { name: 'Careers', path: '/careers' },
+    // { name: 'Blog', path: '/blog' },
+    // { name: 'Contact', path: '/contact' },
+    // { name: 'Careers', path: '/careers' },
   ];
 
   return (

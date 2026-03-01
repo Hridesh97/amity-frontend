@@ -22,63 +22,67 @@ const WebDevelopment = () => {
   const pricingPlans = [
     {
       name: "BASIC WEBSITE",
-      price: "3,999",
+      price: "5,999",
      适合: "Small Business / Startup",
       icon: <FiCode className="w-6 h-6" />,
       features: [
-        { text: "02 Pages", icon: <FiLayers /> },
-        { text: "1 Business Email", icon: <FiMail /> },
+        { text: "04 Pages", icon: <FiLayers /> },
+        // { text: "1 Business Email", icon: <FiMail /> },
         { text: "SEO Ready", icon: <FiSearch /> },
         { text: "Responsive Design", icon: <FiSmartphone /> },
         { text: "Basic Product Listing", icon: <FiLayers /> },
         { text: "Unlimited Images", icon: <FiImage /> },
         { text: "Social Media Integration", icon: <FiShare2 /> },
-        { text: "Live Chat Integration", icon: <FiMessageCircle /> },
+        // { text: "Live Chat Integration", icon: <FiMessageCircle /> },
         { text: "Payment Gateway", icon: <FiCreditCard /> },
-        { text: "24x7 Support", icon: <FiClock />, highlight: true }
+        { text: "24x7 Support", icon: <FiClock />, highlight: true },
+        { text: "SSL Security", icon: <FiCode /> , highlight: true }
       ],
       recommended: false,
       color: "blue"
     },
     {
       name: "PROFESSIONAL WEBSITE",
-      price: "8,999",
+      price: "12,999",
      适合: "Growing Business",
       icon: <FiZap className="w-6 h-6" />,
       features: [
-        { text: "05 Pages", icon: <FiLayers /> },
-        { text: "2 Business Emails", icon: <FiMail /> },
+        { text: "08 Pages", icon: <FiLayers /> },
+        { text: "1 Business Emails", icon: <FiMail /> },
         { text: "Advanced SEO", icon: <FiSearch /> },
         { text: "Responsive Design", icon: <FiSmartphone /> },
         { text: "Advanced Product Listing", icon: <FiLayers /> },
         { text: "Unlimited Images", icon: <FiImage /> },
         { text: "Social Media Integration", icon: <FiShare2 /> },
-        { text: "Live Chat Integration", icon: <FiMessageCircle /> },
+        // { text: "Live Chat Integration", icon: <FiMessageCircle /> },
         { text: "Payment Gateway", icon: <FiCreditCard /> },
         { text: "24x7 Support", icon: <FiClock />, highlight: true },
-        { text: "Blog Integration", icon: <FiCode /> }
+        { text: "Blog Integration", icon: <FiCode /> },
+        { text: "SSL Security", icon: <FiCode /> , highlight: true }
       ],
       recommended: true,
       color: "green"
     },
     {
       name: "E-COMMERCE SOLUTION",
-      price: "16,999",
+      price: "19,999",
      适合: "Online Store",
       icon: <FiDatabase className="w-6 h-6" />,
       features: [
+        { text: "Free Domain & Hosting", icon: <FiLayers /> },
         { text: "10+ Dynamic Pages", icon: <FiLayers /> },
-        { text: "3 Business Emails", icon: <FiMail /> },
+        { text: "2 Business Emails", icon: <FiMail /> },
         { text: "Advanced SEO", icon: <FiSearch /> },
         { text: "Responsive Design", icon: <FiSmartphone /> },
         { text: "Full E-commerce Setup", icon: <FiLayers /> },
         { text: "Unlimited Products", icon: <FiImage /> },
         { text: "Social Media Integration", icon: <FiShare2 /> },
-        { text: "Live Chat Integration", icon: <FiMessageCircle /> },
+        // { text: "Live Chat Integration", icon: <FiMessageCircle /> },
         { text: "Multiple Payment Gateways", icon: <FiCreditCard /> },
         { text: "24x7 Support", icon: <FiClock />, highlight: true },
         { text: "Inventory Management", icon: <FiDatabase /> },
-        { text: "Order Tracking", icon: <FiCode /> }
+        { text: "Order Tracking", icon: <FiCode /> },
+        { text: "SSL Security", icon: <FiCode /> , highlight: true }
       ],
       recommended: false,
       color: "purple"
